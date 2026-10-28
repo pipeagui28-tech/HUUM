@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUM | Evidencias</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="iestilo.css">
+</head>
+<body>
+
+  <!-- EFECTO DE RUIDO MENTAL OVERLAY -->
+  <div class="noise-overlay" aria-hidden="true">
+    <span>FUTURO</span><span>¿Y SI?</span><span>MAÑANA</span><span>NO SOY SUFICIENTE</span>
+  </div>
+
+  <!-- NAVEGACIÓN PRINCIPAL -->
+  <nav class="navbar">
+    
+    <a href="index.html" class="logo-container" style="display: flex; align-items: center; padding: 10px 0; position: relative; z-index: 1;">
+  <img src="logo.png" alt="Logo HUM" style="height: 50px; width: auto; object-fit: contain; transform: scale(3.8); transform-origin: center; pointer-events: none;">
+</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienessomos.html">Quiénes Somos</a></li>
+      <li><a href="evidencias.html" class="active">Evidencias</a></li>
+      <li><a href="st.html">ST</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- CONTENIDO DE EVIDENCIAS INTERACTIVO -->
+  <main class="contenedor-evidencias">
+    <h1 class="titulo-boceto">Evidencias del Proyecto</h1>
+    <p class="subtitulo-evidencias">Explora el proceso creativo detrás del cómic y la plataforma web de HUM.</p>
+
+    <!-- Layout Interactivo (Menú izquierdo / Visor derecho) -->
+    <div class="evidence-layout">
+      
+      <!-- Menú lateral de evidencias -->
+      <aside class="evidence-menu">
+        <button class="ev-btn active" onclick="showEvidence('ev1', event)">Evidencia 1: Idea Inicial</button>
+        <button class="ev-btn" onclick="showEvidence('ev2', event)">Evidencia 2: Guion</button>
+        <button class="ev-btn" onclick="showEvidence('ev3', event)">Evidencia 3: Storyboard</button>
+        <button class="ev-btn" onclick="showEvidence('ev4', event)">Evidencia 4: Ilustración</button>
+        <button class="ev-btn" onclick="showEvidence('ev5', event)">Evidencia 5: Maquetación Web</button>
+      </aside>
+
+      <!-- Panel visor de contenido -->
+      <section class="evidence-display">
+        
+        <!-- Evidencia 1 -->
+        <article id="ev1" class="ev-content active">
+          <span class="ev-tag">FADE 01</span>
+          <h2>Lluvia de Ideas y Concepto HUM</h2>
+          <p>Primeros acercamientos al zumbido mental, definición de la personalidad de Nico y estructuración del mensaje central del proyecto.</p>
+          <div class="ev-media-box" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+  <img src="boceto1.jpeg" alt="Primera parte del proceso" style="width: 100%; height: 250px; object-fit: cover; border: 2px solid #000;">
+  <img src="boceto2.jpeg" alt="Segunda parte del proceso" style="width: 100%; height: 250px; object-fit: cover; border: 2px solid #000;">
+</div>
+        </article>
+
+        <!-- Evidencia 2 -->
+        <article id="ev2" class="ev-content">
+          <span class="ev-tag">FADE 02</span>
+          <h2>Escritura del Guion</h2>
+          <p>Desarrollo de las páginas, diálogos entre Nico, Valeria y su entorno, marcando los momentos de mayor tensión del sobrepensamiento.</p>
+          <div class="ev-media-box" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+  <img src="guion1.jpeg" alt="Primera parte del proceso" style="width: 100%; height: 250px; object-fit: cover; border: 2px solid #000;">
+  <img src="guion2.jpeg" alt="Segunda parte del proceso" style="width: 100%; height: 250px; object-fit: cover; border: 2px solid #000;">
+</div>
+        </article>
+
+        <!-- Evidencia 3 -->
+        <article id="ev3" class="ev-content">
+          <span class="ev-tag">FADE 03</span>
+          <h2>Storyboards y Bocetos</h2>
+          <p>Planeación visual de las viñetas, encuadres y distribución espacial de las interferencias gráficas del HUM.</p>
+          <div class="ev-media-box" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+  <img src="storyb1.jpeg" alt="Primera parte del proceso" style="width: 100%; height: 250px; object-fit: cover; border: 2px solid #000;">
+  <img src="storyb2.jpeg" alt="Segunda parte del proceso" style="width: 100%; height: 250px; object-fit: cover; border: 2px solid #000;">
+</div>
+        </article>
+
+        <!-- Evidencia 4 -->
+        <article id="ev4" class="ev-content">
+          <span class="ev-tag">FADE 04</span>
+          <h2>Ilustración Digital y Color</h2>
+          <p>Proceso de dibujo, aplicación de la paleta de tonos oscuros, texturas imperfectas y estilo grunge.</p>
+          <div class="ev-media-box" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+  <img src="digital1.jpeg" alt="Primera parte del proceso" style="width: 100%; height: 250px; object-fit: cover; border: 2px solid #000;">
+  <img src="digital2.jpeg" alt="Segunda parte del proceso" style="width: 100%; height: 250px; object-fit: cover; border: 2px solid #000;">
+</div>
+        </article>
+
+        <!-- Evidencia 5 -->
+        <article id="ev5" class="ev-content">
+          <span class="ev-tag">FADE 05</span>
+          <h2>Desarrollo de la Página Web</h2>
+          <p>Codificación en HTML y CSS, estructuración de las pestañas institucionales y diseño responsivo adaptado al concepto alternativo.</p>
+          <div class="ev-media-box" style="display: grid; grid-template-columns: 1fr 1fr; gap: 15px;">
+  <img src="web1.png" alt="Primera parte del proceso" style="width: 100%; height: 250px; object-fit: cover; border: 2px solid #000;">
+  <img src="web2.png" alt="Segunda parte del proceso" style="width: 100%; height: 250px; object-fit: cover; border: 2px solid #000;">
+</div>
+        </article>
+
+      </section>
+
+    </div>
+   <!-- CAJA INFORMATIVA ADICIONAL -->
+    <div class="concept-box" style="margin-top: 3rem; margin-bottom: 2rem;">
+      <h2 style="font-family: var(--font-title); font-size: 2rem; color: var(--accent-red);">Bitácora del Equipo</h2>
+      <p>
+        Cada etapa del proyecto refleja la investigación sobre la ansiedad juvenil y cómo traducirla visualmente al formato de historieta. Aquí guardamos las pruebas de diseño que validaron el resultado final de la obra.
+      </p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="backcover-quote">"El ruido no define quién eres, sino cómo aprendes a escuchar tu propia voz."</p>
+    <div class="footer-brand">HUM — THE NOISE NOBODY HEARS</div>
+    <p class="copyright">&copy; 2026 Proyecto Escolar de Cómic Integral. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Script para cambiar de evidencia interactivamente -->
+  <script>
+    function showEvidence(evId, evt) {
+      // Ocultar todos los contenidos
+      const contents = document.querySelectorAll('.ev-content');
+      contents.forEach(c => c.classList.remove('active'));
+
+      // Desactivar todos los botones
+      const buttons = document.querySelectorAll('.ev-btn');
+      buttons.forEach(b => b.classList.remove('active'));
+
+      // Activar el seleccionado
+      document.getElementById(evId).classList.add('active');
+      if (evt) {
+        evt.currentTarget.classList.add('active');
+      }
+    }
+  </script>
+
+</body>
+</html>

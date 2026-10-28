@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiénes Somos — HUM: El ruido que nadie escucha</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <!-- Tu archivo de estilos global -->
+  <link rel="stylesheet" href="iestilo.css">
+</head>
+<body>
+
+  <!-- EFECTO DE RUIDO VISUAL DE FONDO -->
+  <div class="noise-overlay">
+    <span>HUM</span><span>RUIDO</span><span>NICO</span><span>MENTAL</span>
+  </div>
+
+  <!-- NAVEGACIÓN PRINCIPAL -->
+  <nav class="navbar">
+    
+    <a href="index.html" class="logo-container" style="display: flex; align-items: center; padding: 10px 0; position: relative; z-index: 1;">
+  <img src="logo.png" alt="Logo HUM" style="height: 50px; width: auto; object-fit: contain; transform: scale(3.8); transform-origin: center; pointer-events: none;">
+</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienessomos.html" class="active">Quiénes Somos</a></li>
+      <li><a href="evidencias.html">Evidencias</a></li>
+      <li><a href="st.html">ST</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+
+    <a href="contacto.html" class="btn-hum">ÚNETE</a>
+  </nav>
+
+  <!-- SECCIÓN PRINCIPAL: QUIÉNES SOMOS -->
+  <main class="section-container">
+    <div class="section-header">
+      <span class="badge-time">EQUIPO Y PROPÓSITO</span>
+      <h1 class="section-title">¿QUIÉNES SOMOS?</h1>
+      <p class="section-subtitle">Conoce el trasfondo del proyecto y al equipo creativo detrás de esta historia.</p>
+    </div>
+
+    <!-- Estructura interactiva limpia solo con los marcos -->
+    <div class="interactive-layout">
+      
+      <!-- Menú de navegación lateral -->
+      <aside class="sidebar-menu">
+        <button class="tab-btn active" onclick="showTab('mision')">Misión</button>
+        <button class="tab-btn" onclick="showTab('vision')">Visión</button>
+        <button class="tab-btn" onclick="showTab('problema')">Pregunta Problema</button>
+        <button class="tab-btn" onclick="showTab('obj-general')">Objetivo General</button>
+        <button class="tab-btn" onclick="showTab('obj-especificos')">Objetivos Específicos</button>
+        <button class="tab-btn" onclick="showTab('cronograma')">Cronograma</button>
+      </aside>
+
+      <!-- Panel de contenido dinámico -->
+      <section class="content-display frame-display">
+        
+        <!-- Misión -->
+        <article id="mision" class="tab-content active">
+          <div class="frame-container">
+            <img src="hum01.jpeg" alt="Marco Misión HUM">
+          </div>
+        </article>
+
+        <!-- Visión -->
+        <article id="vision" class="tab-content">
+          <div class="frame-container">
+            <img src="hum02.jpeg" alt="Marco Visión HUM">
+          </div>
+        </article>
+
+        <!-- Pregunta Problema -->
+        <article id="problema" class="tab-content">
+          <div class="frame-container">
+            <img src="hum03.jpeg" alt="Marco Pregunta Problema HUM">
+          </div>
+        </article>
+
+        <!-- Objetivo General -->
+        <article id="obj-general" class="tab-content">
+          <div class="frame-container">
+            <img src="hum04.jpeg" alt="Marco Objetivo General HUM">
+          </div>
+        </article>
+
+        <!-- Objetivos Específicos -->
+        <article id="obj-especificos" class="tab-content">
+          <div class="frame-container">
+            <img src="hum05.jpeg" alt="Marco Objetivos Específicos HUM">
+          </div>
+        </article>
+
+        <!-- Cronograma -->
+        <article id="cronograma" class="tab-content">
+          <div class="frame-container">
+            <img src="hum06.jpeg" alt="Marco Cronograma HUM">
+          </div>
+        </article>
+
+      </section>
+
+    </div>
+
+    <!-- CAJAS DE CONTENIDO ESTILO GRUNGE -->
+    <div class="concept-box" style="margin-top: 3rem; margin-bottom: 2rem;">
+      <h2 style="font-family: var(--font-title); font-size: 2rem; color: var(--accent-red);">El Proyecto</h2>
+      <p>
+        <strong>"HUM — The Noise Nobody Hears"</strong> es un cómic juvenil de 8 páginas centrado en la salud mental, la ansiedad y el ruido interno al que se enfrentan los jóvenes hoy en día. A través de la historia de Nico, buscamos visibilizar aquello de lo que pocos se atreven a hablar abiertamente, utilizando una estética urbana, alternativa y grunge.
+      </p>
+    </div>
+
+    <div class="concept-box">
+      <h2 style="font-family: var(--font-title); font-size: 2rem; color: var(--accent-cyan);">Nuestra Misión</h2>
+      <p>
+        Queremos conectar con el público mediante un formato visual potente y sincero. Este sitio web recopila todo el proceso del cómic integral, sirviendo como una ventana abierta a nuestro esfuerzo creativo, evidencias de trabajo y la banda sonora que acompaña el viaje emocional de los personajes.
+      </p>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="backcover-quote">"El ruido no define quién eres, sino cómo aprendes a escuchar tu propia voz."</p>
+    <div class="footer-brand">HUM — THE NOISE NOBODY HEARS</div>
+    <p class="copyright">&copy; 2026 Proyecto Escolar de Cómic Integral. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- SCRIPT PARA CAMBIAR DE PESTAÑA INTERACTIVA -->
+  <script>
+    function showTab(tabId) {
+      // Ocultar todos los contenidos
+      const contents = document.querySelectorAll('.tab-content');
+      contents.forEach(content => content.classList.remove('active'));
+
+      // Quitar clase active de todos los botones
+      const buttons = document.querySelectorAll('.tab-btn');
+      buttons.forEach(button => button.classList.remove('active'));
+
+      // Mostrar el contenido seleccionado y activar su botón
+      document.getElementById(tabId).classList.add('active');
+      event.currentTarget.classList.add('active');
+    }
+  </script>
+
+</body>
+</html>

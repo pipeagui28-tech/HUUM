@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUM — Contacto</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@300;400;600;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="iestilo.css">
+</head>
+<body>
+
+  <!-- EFECTO DE RUIDO MENTAL OVERLAY -->
+  <div class="noise-overlay" aria-hidden="true">
+    <span>FUTURO</span><span>¿Y SI?</span><span>MAÑANA</span><span>NO SOY SUFICIENTE</span>
+  </div>
+
+  <!-- NAVEGACIÓN PRINCIPAL -->
+  <nav class="navbar">
+    
+    <a href="index.html" class="logo-container" style="display: flex; align-items: center; padding: 10px 0; position: relative; z-index: 1;">
+  <img src="logo.png" alt="Logo HUM" style="height: 50px; width: auto; object-fit: contain; transform: scale(3.8); transform-origin: center; pointer-events: none;">
+</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="quienessomos.html">Quiénes Somos</a></li>
+      <li><a href="evidencias.html">Evidencias</a></li>
+      <li><a href="st.html">ST</a></li>
+      <li><a href="contacto.html" class="active">Contacto</a></li>
+    </ul>
+
+    <a href="contacto.html" class="btn-hum">CONTACTAR</a>
+  </nav>
+
+  <!-- SECCIÓN PRINCIPAL CONTACTO -->
+  <main class="contenedor-contacto">
+
+    <header class="page-header header-contacto">
+      <span class="badge-time badge-beige">📩 CONTACTO</span>
+      <h1 class="page-title titulo-contacto">¿QUIERES CONOCER MÁS SOBRE HUM?</h1>
+      <p class="page-desc desc-contacto">
+        HUM es un proyecto de narrativa gráfica creado para representar experiencias, pensamientos y emociones que muchos jóvenes viven pero no siempre expresan.
+      </p>
+      <p class="page-desc desc-contacto sub-desc">
+        Si quieres conocer más sobre el proyecto, nuestro proceso creativo o compartir una opinión, puedes contactarnos a través de los siguientes medios.
+      </p>
+    </header>
+
+    <!-- DETALLE VISUAL: CABLE QUE FORMA HUM -->
+    <div class="ilustracion-cable" aria-hidden="true">
+      <svg class="linea-cable" viewBox="0 0 500 60" preserveAspectRatio="none">
+        <path d="M 10 30 Q 125 5, 250 30 T 490 30" stroke="#f5f0eb" stroke-width="2.5" fill="none" stroke-dasharray="6 4" />
+      </svg>
+      <div class="audifonos-logo">
+        🎧 <span class="texto-hum-cable">HUM</span>
+      </div>
+    </div>
+
+    <!-- TARJETA CREADORES E INFORMACIÓN -->
+    <section class="info-block tarjeta-contacto">
+      <div class="block-tag beige-tag">01. CREADORES & PROYECTO</div>
+      
+      <div class="grid-contacto">
+        <div class="columna-info">
+          <h3>👤 CREADORES</h3>
+          <p class="nombre-creador">Juan David Rodríguez Arcos</p>
+          <p class="nombre-creador">Juan Felipe Aguilar Gonzalez</p>
+        </div>
+
+        <div class="columna-info">
+          <h3>📬 MEDIOS DIRECTOS</h3>
+          <p><strong>Correo:</strong> <a href="mailto:hum.proyectoo@gmail.com" style="color: var(--accent-cyan);">hum.proyectoo@gmail.com</a></p>
+          <p><strong>Instagram:</strong> <a href="https://instagram.com/hum.comic" target="_blank" style="color: var(--accent-cyan);">@hum.comic</a></p>
+          <p><strong>Proyecto:</strong> HUM — <em>The Noise Nobody Hears</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- FORMULARIO -->
+    <section class="info-block tarjeta-contacto">
+      <div class="block-tag beige-tag">02. MENSAJE DIRECTO</div>
+      <h2 class="block-title titulo-form">¿TIENES ALGO QUE DECIR?</h2>
+
+      <form class="formulario-hum" action="#" method="POST" onsubmit="event.preventDefault(); alert('¡Mensaje simulado con éxito! Gracias por escribirnos.');">
+        <div class="campo-form">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre o apodo..." required>
+        </div>
+
+        <div class="campo-form">
+          <label for="email">Correo electrónico</label>
+          <input type="email" id="email" name="email" placeholder="tu.correo@ejemplo.com" required>
+        </div>
+
+        <div class="campo-form">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe lo que pienses o quieras compartirnos..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-enviar-hum btn-hum">[ ENVIAR ]</button>
+      </form>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-brand">HUM — CÓMIC ESCOLAR</div>
+    <p class="copyright">Jornada Media Técnica · Proyecto de Grado 2026</p>
+  </footer>
+
+</body>
+</html>

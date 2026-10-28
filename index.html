@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HUM — El ruido que nadie escucha</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Outfit:wght@300;400;600;800;900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="iestilo.css">
+</head>
+
+<body>
+
+  <div class="noise-overlay" aria-hidden="true">
+    <span>FUTURO</span><span>¿Y SI?</span><span>MAÑANA</span><span>NO SOY SUFICIENTE</span>
+  </div>
+
+  <!-- NAVEGACIÓN PRINCIPAL -->
+  <nav class="navbar">
+    
+    <a href="index.html" class="logo-container" style="display: flex; align-items: center; padding: 10px 0; position: relative; z-index: 1;">
+  <img src="logo.png" alt="Logo HUM" style="height: 50px; width: auto; object-fit: contain; transform: scale(3.8); transform-origin: center; pointer-events: none;">
+</a>
+
+    <ul class="nav-links">
+      <li><a href="index.html" class="active">Inicio</a></li>
+      <li><a href="quienessomos.html">Quiénes Somos</a></li>
+      <li><a href="evidencias.html">Evidencias</a></li>
+      <li><a href="st.html">ST</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+
+    <a href="#sinopsis" class="btn-hum">DESCUBRIR</a>
+  </nav>
+  <!-- HERO / PORTADA DE INICIO -->
+  <header class="hero" id="inicio">
+    <div class="hum-info">
+      <span class="badge-time">PROYECTO CÓMIC INTEGRAL</span>
+      <h1 class="hero-title">EL RUIDO QUE NADIE ESCUCHA</h1>
+      <p class="hero-quote">
+        «Tal vez nunca se trató de apagar el ruido. Tal vez se trataba de entender qué estaba tratando de decir.»
+      </p>
+
+      <div class="hero-actions">
+        <a href="#sinopsis" class="btn-hum secondary">Conocer la Historia</a>
+        <a href="#capitulos" class="btn-hum ghost">Ver Capítulos</a>
+      </div>
+    </div>
+
+    <!-- PORTADA DEL CÓMIC -->
+    <div class="cover-container">
+      <div class="cover-frame">
+        <div class="cover-tag">VOL. 01</div>
+        <img src="portada.jpeg" alt="Portada HUM" style="width:100%; height:auto; object-fit:contain;">
+        <div class="cover-content" style="margin-top: 1rem;">
+          <span class="cover-sub">HISTORIA GRÁFICA</span>
+          <h2 class="cover-main-title">HUM</h2>
+          <p class="cover-caption">Una exploración visual sobre el ruido mental y la presión juvenil.</p>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- PRESENTACIÓN DEL PROYECTO (SINOPSIS Y CONCEPTO) -->
+  <section class="section-container" id="sinopsis">
+    <div class="section-header">
+      <h2 class="section-title">¿QUÉ ES HUM?</h2>
+      <span class="section-subtitle">Premisa y universo narrativo</span>
+    </div>
+
+    <div class="concept-box">
+      <p>
+        <strong>HUM</strong> es una novela gráfica enfocada en los pensamientos automáticos, la ansiedad social y el
+        peso de las expectativas en la etapa escolar.
+      </p>
+      <p>
+        A través del viaje introspectivo de Nico (16 años), la obra transforma sensaciones abstractas —como el
+        sobrepensamiento o la parálisis por el futuro— en elementos visuales, atmósferas nocturnas y diálogos
+        cotidianos.
+      </p>
+    </div>
+  </section>
+
+  <!-- VISTA PREVIA DE ESTRUCTURA / CAPÍTULOS -->
+  <section class="section-container" id="capitulos">
+    <div class="section-header">
+      <h2 class="section-title">ESTRUCTURA DE LA NARRATIVA</h2>
+      <span class="section-subtitle">El viaje a través del ruido</span>
+    </div>
+
+    <div class="chapters-grid">
+      <article class="card-chapter">
+        <div class="chapter-number">01</div>
+        <div class="chapter-body">
+          <span class="chapter-time">3:07 AM</span>
+          <h3 class="chapter-title">El insomnio</h3>
+          <p class="chapter-desc">La pantalla encendida en la oscuridad y el primer choque con los pensamientos
+            flotantes.</p>
+        </div>
+      </article>
+
+      <article class="card-chapter">
+        <div class="chapter-number">02</div>
+        <div class="chapter-body">
+          <span class="chapter-time">El Salón</span>
+          <h3 class="chapter-title">El Ruido Exterior</h3>
+          <p class="chapter-desc">El contraste entre el bullicio de los pasillos y el aislamiento interno de quien no
+            sabe qué sigue.</p>
+        </div>
+      </article>
+
+      <article class="card-chapter">
+        <div class="chapter-number">03</div>
+        <div class="chapter-body">
+          <span class="chapter-time">Audífonos</span>
+          <h3 class="chapter-title">El Refugio</h3>
+          <p class="chapter-desc">La música indie y grunge como la única herramienta para aislar la mente durante la
+            caminata a casa.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- FOOTER EDITORIAL -->
+  <footer>
+    <div class="footer-backcover">
+      <p class="backcover-quote">
+        «Todos tenemos algo que hace ruido.<br>
+        A veces son las notas. A veces el futuro.<br>
+        A veces nosotros mismos.»
+      </p>
+      <div class="footer-brand">HUM — INICIO</div>
+      <p class="copyright">Navega a las demás pestañas desde el menú superior para conocer más del equipo y los
+        procesos.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
